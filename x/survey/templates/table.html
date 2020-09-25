@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <h4>Sheet</h4>
+    <table id="example" class="table table-dark table-striped table-bordered table-hover table-sm">
+        <thead class="thead-light">
+            <tr>
+                <th>Name</th>
+                <th>House</th>
+                <th>Position</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for row in rows %}
+            <tr>
+            {% for cell in row %}
+                <td>{{ cell }}</td>
+            {% endfor %}
+            </tr>
+        {% endfor%}
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>House</th>
+                <th>Position</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
+    </script>
+
+{% endblock %}
