@@ -1,4 +1,4 @@
-### **Problems** *released in* **2019**<br><br>
+### **Problems** *worked on in* **2019**<br><br>
 *for the course*<br>
 # **[CS50's Introduction to Computer Science](https://cs50.harvard.edu/x/2020/)**<br><br>
 *offered by*<br>
